@@ -2,6 +2,7 @@ def main():
 	#write your code here
   skills=["Python","C++","Javascript","Juggling","Running","Eating"]
   cv={}
+  print("Welcome to the special recruitment program, please answer the following questions:")
   name=input("What's your name?")
   cv["name"]=name
   age=input("How old are you?")
@@ -23,11 +24,11 @@ def main():
   if cv["age"]>=25 and cv["age"]<=40 and cv["experience"]>5 and skills[5] in cv["skills"]:
     # for k in cv["skills"]:
     #   if skills[5] == cv["skills"]:
-      print("You have been accepted")
+      print("You have been accepted, %s"%(cv["name"]))
 
 
   else:
-    print("You have been rejected")  
+    print("You have been rejected %s"%(cv["name"]))  
 
 if __name__ == '__main__':
 	main()
